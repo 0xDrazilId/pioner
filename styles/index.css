@@ -1,0 +1,116 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0; 
+  box-sizing: border-box;
+}
+
+body{
+  background: #2f3542;
+}
+
+header{
+  height: 100vh;
+  width: 100vw;
+}
+
+.menu{
+  width: 100%;
+  height: 100px;
+  background-color: #222f3e;
+}
+
+.logo{
+  display: block;
+  position: absolute;
+  height: 122px; 
+  min-width: 320px;
+  top: 0;
+  left: 0;
+  background: url('../src/img/Logo.png') no-repeat;
+  background-position: left top;
+  background-size: contain;
+}
+
+.nav{
+  float: right;
+  width: calc(100% - 320px);
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  list-style-type: none;
+}
+
+.nav li{
+  height: 100%;
+  line-height: 100px;
+  background-color: transparent;
+}
+
+.nav a{
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.nav li:hover{
+  transition: .4s;
+}
+
+#chk{
+  position: absolute;
+  visibility: hidden;
+  z-index: -1111;
+}
+
+.open-menu-btn,
+.hide-menu-btn{
+  position: absolute;
+  transition: .4s;
+  cursor: pointer;
+  display: none;
+}
+
+.open-menu-btn{
+  color: azure;
+  font-size: 50px;
+  right: 30px;
+  top: 25px;
+}
+
+.hide-menu-btn{
+  font-size: 30px;
+  color: #000 ;
+  right: 30px;
+  top: 25px;
+}
+
+
+@media (max-width: 845px){
+  .nav{
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 300px;
+    height: 100vh;
+    right:-100%;
+    background-color: #2f3542;
+    transition: .7s;
+    padding-left: 40px;
+  }
+
+  .nav li{
+    height: auto;
+    line-height: calc(100vh / 5 - 20px);
+    padding: auto 15px;
+  }
+  
+  #chk:checked ~ .nav{
+    right: 0;
+    transition: .7s;
+  }
+
+  .open-menu-btn, .hide-menu-btn{
+    display: block;
+  }
+}
