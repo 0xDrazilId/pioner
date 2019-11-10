@@ -1,3 +1,13 @@
+@font-face{
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Italic.ttf");
+}
+
+@font-face{
+  font-family: "Roboto-thin";
+  src: url("../fonts/Roboto-Light.ttf");
+}
+
 *, *::after, *::before {
   margin: 0;
   padding: 0; 
@@ -5,13 +15,16 @@
 }
 
 body{
-  background: #2f3542;
+  scroll-behavior: smooth;
 }
 
 header{
   height: 100vh;
   width: 100vw;
+  background: url('../src/img/service.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
+
 
 .menu{
   width: 100%;
@@ -22,8 +35,8 @@ header{
 .logo{
   display: block;
   position: absolute;
-  height: 122px; 
-  min-width: 320px;
+  height: 122px;
+  width: 320px;
   top: 0;
   left: 0;
   background: url('../src/img/Logo.png') no-repeat;
@@ -37,24 +50,27 @@ header{
   height: 100px;
   display: flex;
   justify-content: space-around;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Roboto";
+  font-size: 18px;
   list-style-type: none;
+  cursor: pointer;
 }
 
 .nav li{
   height: 100%;
   line-height: 100px;
-  background-color: transparent;
+  transition: .4s;
 }
 
 .nav a{
   color: #fff;
-  font-size: 18px;
   text-decoration: none;
 }
 
 .nav li:hover{
-  transition: .4s;
+  height: 115px;
+  transform: translateY(-15px);
+  transition: all .4s;
 }
 
 #chk{
@@ -74,35 +90,66 @@ header{
 .open-menu-btn{
   color: azure;
   font-size: 50px;
+  right: 15px;
+  top: 12px;
+}
+
+.hide-menu-btn{
+  font-size: 36px;
+  color: #fff ;
   right: 30px;
   top: 25px;
 }
 
-.hide-menu-btn{
-  font-size: 30px;
-  color: #000 ;
-  right: 30px;
-  top: 25px;
+.hello{
+  position: absolute;
+  right: 15vw;
+  top: 180px;
+  width: 400px;
+  height: 400px;
+  background-color: rgba(255, 255, 255, .4);
+  box-shadow: 0 0 20px black;
+}
+
+.hello__h1, .hello__h3{
+  color: azure;
+  font-family: "Roboto-thin";
+  text-align: center;
 }
 
 
 @media (max-width: 845px){
+  .menu{
+    height: 80px;
+  }
+  .logo{
+    height: 90px;
+  }
   .nav{
-    display: block;
+    border-top-left-radius: 25px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
     position: fixed;
     top: 0;
-    width: 300px;
-    height: 100vh;
+    width: 70vw;
+    height: 100%;
     right:-100%;
-    background-color: #2f3542;
     transition: .7s;
-    padding-left: 40px;
+    background: url('../src/img/menu.jpg') no-repeat;
+    background-size: cover;
+    font-size: 24px;
+    z-index: 3;
   }
 
   .nav li{
-    height: auto;
-    line-height: calc(100vh / 5 - 20px);
-    padding: auto 15px;
+    height: calc((100% / 5) - 50px);
+    padding-left: 10vw;
+  }
+
+  .nav li:hover{
+    height: calc((100% / 5) - 50px);
+    transform: none;
   }
   
   #chk:checked ~ .nav{
@@ -112,5 +159,10 @@ header{
 
   .open-menu-btn, .hide-menu-btn{
     display: block;
+  }
+
+  .hello{
+    top: 22vh;
+    width: 70vw;
   }
 }
