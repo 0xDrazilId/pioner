@@ -7,20 +7,28 @@
     <title>Автосервис "Пионер" | Самара, ул. Партизанская, 44</title>
     <link rel="stylesheet" href="styles/index.css">
     <script src="https://kit.fontawesome.com/f19ecbf2ec.js" crossorigin="anonymous"></script>
+    <script src="libs/jquery-3.4.1.min.js"></script>
+    <script src="libs/jquery.maskedinput.js"></script>
+    <script src="libs/common.js"></script>
 </head>
 <body>
-    <header>        
+    <header>   
+        <div class="intro">
+            <div class="video">
+                <video src="src/video/cover.mp4" autoplay muted loop class="video__media"></video>
+            </div>     
+        </div>
         <div class="logo" id="home">                
         </div>        
         <div class="menu">
             <input type="checkbox" id="chk">
             <label for="chk" class="open-menu-btn"><i class="fas fa-bars"></i></label>
             <ul class="nav">
-                <li><a href="#home"><i class="fas fa-home"></i>&nbsp;&nbsp;Главная</a></li>
-                <li><a href="#team"><i class="fas fa-user-friends"></i>&nbsp;&nbsp;Команда</a></li>
-                <li><a href="#"><i class="fas fa-clipboard-list"></i>&nbsp;&nbsp;Прайс</a></li>
-                <li><a href="#"><i class="fas fa-cogs"></i>&nbsp;&nbsp;Запчасти</a></li>
-                <li><a href="#"><i class="far fa-id-card"></i>&nbsp;&nbsp;Контакты</a></li>
+                <a href="#home"><i class="fas fa-home"></i>&nbsp;&nbsp;Главная</a>
+                <a href="#team"><i class="fas fa-user-friends"></i>&nbsp;&nbsp;Команда</a>
+                <a href="#"><i class="fas fa-clipboard-list"></i>&nbsp;&nbsp;Прайс</a>
+                <a href="#"><i class="fas fa-cogs"></i>&nbsp;&nbsp;Запчасти</a>
+                <a href="#"><i class="far fa-id-card"></i>&nbsp;&nbsp;Контакты</a>
                 <label for="chk" class="hide-menu-btn"><i class="fas fa-times"></i></label>
             </ul>
         </div>  
@@ -29,12 +37,20 @@
                 Автосервис пионер
             </h1>
             <h3 class="hello__h3">
-                Запишитесь на бесплатную консультацию прямо сейчас
+                Получите бесплатную консультацию прямо сейчас
             </h3>
+            <form action="index.html" class="hello__form">
+                +7 <input type="text" id="phone" class = "hello__input" placeholder="(___) ___-____">
+                <input type="submit" class="hello__submit">
+            </form>
         </div>       
     </header>
     <div id="team">
-
+        Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты. Себя он правилами грустный заглавных буквенных переулка рот сбить власти, обеспечивает lorem пор свой вопроса безопасную! Lorem вопрос меня повстречался.
+        Подзаголовок, то подпоясал своих напоивший грамматики пустился гор использовало, маленькая если lorem журчит деревни залетают себя по всей океана что города прямо лучше безорфографичный. Своего коварный не мир? Страну, даже деревни.
+        Его переписывается своих свой лучше рекламных напоивший до, дорогу наш дал несколько выйти инициал. Одна решила она, встретил грамматики они послушавшись жаренные предупреждал ведущими ты меня домах грустный, он дорогу?
+        Но всемогущая своих ручеек власти она меня! Взгляд, текстами алфавит страна языком своих вдали от всех пояс безорфографичный там подзаголовок его запятых за семантика великий океана ipsum текстов всемогущая, до свою.
+        Составитель не, несколько переписали, обеспечивает, текста свой но до щеке всеми предупредила великий рукописи решила журчит путь буквоград! За, ipsum точках они обеспечивает дал заголовок буквоград возвращайся жизни текста lorem.
     </div>
 </body>
 </html>
