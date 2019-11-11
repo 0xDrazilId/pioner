@@ -1,13 +1,3 @@
-@font-face{
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Italic.ttf");
-}
-
-@font-face{
-  font-family: "Roboto-thin";
-  src: url("../fonts/Roboto-Light.ttf");
-}
-
 *, *::after, *::before {
   margin: 0;
   padding: 0; 
@@ -16,211 +6,128 @@
 
 body{
   scroll-behavior: smooth;
-  overflow: hidden;
 }
 
 header{
   height: 100vh;
   width: 100vw;
-  /* background: url('../src/img/service.jpg') no-repeat center center fixed; */
+  background: url('../src/img/service.jpg') no-repeat center center fixed;
   background-size: cover;
   overflow: hidden;
 }
 
-.intro{
-  max-height: 100%;
-  overflow-y: hidden;
-  position: relative;
-  background: url('../src/video/cover.jpg') no-repeat center center fixed;
-}
-
-.intro::after{
-  content:"";
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  background-color: rgba(0,0,0,.5);
-  width: 100%;
-  height: 100%;
-
-}
-
-#team{
-  z-index: 5;
-}
-
-.video{
-  position: relative;
-  padding-bottom:56.25%;
-}
-
-.video__media{
-  position: absolute;
-  top:0;
-  left:0;
-  height: 100%;
-  width: auto;
-}
-
-.menu{
+nav{
   position: absolute;
   top: 0;
   width: 100%;
-  height: 100px;
-  background-color: #222f3e;
-  box-shadow: inset 15px 0 20px black;
-  z-index: 3;
+  height: 80px;
+  background-color: #141414;
+  /* box-shadow: inset 15px 0 20px black; */
 }
 
 .logo{
   display: block;
   position: absolute;
-  height: 122px;
+  height: 90px;
   width: 320px;
   top: 0;
   left: 0;
   background: url('../src/img/Logo.png') no-repeat;
   background-position: left top;
   background-size: contain;
-  z-index: 4;
+  z-index: 2;
 }
 
-.nav{
-  float: right;
-  width: calc(100% - 320px);
-  height: 100px;
+.nav__insideList{
+  box-sizing: content-box;
+  padding: 40px 15px 45px 15px;
+  /* border-top-left-radius: 25px; */
   display: flex;
-  justify-content: space-around;
+  flex-flow: column nowrap;
+  align-content: center;
+  position: fixed;
+  top: 0;
+  right:-100%;
+  width: 65vw;
+  height: 100%;
+  transition: .7s;
+  background: url('../src/img/menu.jpg') no-repeat;
+  background-size: cover;
+  font-size: 24px;
   font-family: "Roboto";
-  font-size: 18px;
   list-style-type: none;
   cursor: pointer;
+  z-index: 3;
 }
 
-.nav a{
-  height: 100%;
+.nav__insideList a{
+  height: calc((100% - 85px) / 5);
+  padding-left: 10vw;
   line-height: 100px;
   display: block;
   color: #fff;
   text-decoration: none;
-  transition: .4s;
 }
 
-.nav a:hover{
-  height: 115px;
-  transform: translateY(-15px);
-  transition: all .4s;
-}
-
-#chk{
+#nav__toggle{
   position: absolute;
   visibility: hidden;
   z-index: -1111;
 }
 
-.open-menu-btn,
-.hide-menu-btn{
+.nav__btn--open,
+.nav__btn--hide{
   position: absolute;
   transition: .4s;
   cursor: pointer;
-  display: none;
+  display: block;
 }
 
-.open-menu-btn{
+.nav__btn--open{
   color: azure;
   font-size: 50px;
   right: 15px;
   top: 12px;
 }
 
-.hide-menu-btn{
+.nav__btn--hide{
   font-size: 36px;
   color: #fff ;
   right: 30px;
   top: 25px;
 }
 
-.hello{
+/* .nav__btn--hide:active{
+  border: 3px solid #3498db;
+} */
+
+#nav__toggle:checked ~ .nav__insideList{
+  right: 0;
+  transition: .7s;
+}
+
+.feedbackForm{
   position: absolute;
+  top: 22vh;
   right: 15vw;
-  top: 180px;
-  width: 400px;
+  width: 70vw;
   height: 400px;
   color: azure;
   font-family: "Roboto-thin";
   font-size: 22px;
-  z-index: 4;
 }
 
-.hello__h1, .hello__h3{
+.feedbackForm__h1, .feedbackForm__h3{
   color: azure;
   font-family: "Roboto-thin";
   text-align: center;
   margin-bottom: 15px;
 }
 
-.hello__form{
-  margin: 10px;
-  padding: 20px;
-  background-color: rgba(52, 73, 94,.6);
-  border-radius: 15px;
-}
-
-.hello__input{
+.feedbackForm__input{
   font-size: 18px;
 }
 
-.hello__submit{
+.feedbackForm__submit{
   display: block;
-
-}
-
-@media (max-width: 845px){
-  .menu{
-    height: 80px;
-  }
-  .logo{
-    height: 90px;
-  }
-  .nav{
-    border-top-left-radius: 25px;
-    display: flex;
-    flex-flow: column nowrap;
-    align-content: center;
-    position: fixed;
-    top: 0;
-    width: 70vw;
-    height: 100%;
-    right:-100%;
-    transition: .7s;
-    background: url('../src/img/menu.jpg') no-repeat;
-    background-size: cover;
-    font-size: 24px;
-    z-index: 5;
-  }
-
-  .nav a{
-    height: calc((100% / 5) - 50px);
-    padding-left: 10vw;
-  }
-
-  .nav a:hover{
-    height: calc((100% / 5) - 50px);
-    transform: none;
-  }
-  
-  #chk:checked ~ .nav{
-    right: 0;
-    transition: .7s;
-  }
-
-  .open-menu-btn, .hide-menu-btn{
-    display: block;
-  }
-
-  .hello{
-    top: 22vh;
-    width: 70vw;
-  }
 }

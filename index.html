@@ -6,44 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Автосервис "Пионер" | Самара, ул. Партизанская, 44</title>
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" media = "(min-width:845px)" href="styles/index-desktop.css">
     <script src="https://kit.fontawesome.com/f19ecbf2ec.js" crossorigin="anonymous"></script>
     <script src="libs/jquery-3.4.1.min.js"></script>
     <script src="libs/jquery.maskedinput.js"></script>
     <script src="libs/common.js"></script>
 </head>
 <body>
-    <header>   
-        <div class="intro">
-            <div class="video">
-                <video src="src/video/cover.mp4" autoplay muted loop class="video__media"></video>
-            </div>     
-        </div>
-        <div class="logo" id="home">                
-        </div>        
-        <div class="menu">
-            <input type="checkbox" id="chk">
-            <label for="chk" class="open-menu-btn"><i class="fas fa-bars"></i></label>
-            <ul class="nav">
+    <header id="home">   
+        <div class="logo"></div>        
+        <nav>
+            <input type="checkbox" id="nav__toggle">
+            <label for="nav__toggle" class="nav__btn--open"><i class="fas fa-bars"></i></label>
+            <ul class="nav__insideList">
                 <a href="#home"><i class="fas fa-home"></i>&nbsp;&nbsp;Главная</a>
                 <a href="#team"><i class="fas fa-user-friends"></i>&nbsp;&nbsp;Команда</a>
-                <a href="#"><i class="fas fa-clipboard-list"></i>&nbsp;&nbsp;Прайс</a>
-                <a href="#"><i class="fas fa-cogs"></i>&nbsp;&nbsp;Запчасти</a>
-                <a href="#"><i class="far fa-id-card"></i>&nbsp;&nbsp;Контакты</a>
-                <label for="chk" class="hide-menu-btn"><i class="fas fa-times"></i></label>
+                <a href="#price"><i class="fas fa-clipboard-list"></i>&nbsp;&nbsp;Прайс</a>
+                <a href="#parts"><i class="fas fa-cogs"></i>&nbsp;&nbsp;Запчасти</a>
+                <a href="#contacts"><i class="far fa-id-card"></i>&nbsp;&nbsp;Контакты</a>
+                <label for="nav__toggle" class="nav__btn--hide"><i class="fas fa-times"></i></label>
             </ul>
-        </div>  
-        <div class="hello">
-            <h1 class="hello__h1">
+        </nav>  
+        <form class="feedbackForm" action="index.html">
+            <h1 class="feedbackForm__h1">
                 Автосервис пионер
             </h1>
-            <h3 class="hello__h3">
+            <h3 class="feedbackForm__h3">
                 Получите бесплатную консультацию прямо сейчас
-            </h3>
-            <form action="index.html" class="hello__form">
-                +7 <input type="text" id="phone" class = "hello__input" placeholder="(___) ___-____">
-                <input type="submit" class="hello__submit">
-            </form>
-        </div>       
+            </h3>            
+            +7  <input type="text" id="phone" class = "feedbackForm__input" placeholder="(___) ___-____">
+                <input type="submit" class="feedbackForm__submit">
+        </form>       
     </header>
     <div id="team">
         Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты. Себя он правилами грустный заглавных буквенных переулка рот сбить власти, обеспечивает lorem пор свой вопроса безопасную! Lorem вопрос меня повстречался.

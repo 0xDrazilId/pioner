@@ -1,0 +1,59 @@
+nav{
+  height: 100px;
+}
+
+.logo{
+  height: 122px;
+}
+
+.nav__insideList{
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  right: 0;
+  float: right;
+  width: calc(100% - 320px);
+  height: 100px;
+  line-height: 100px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  font-size: 18px;
+  list-style-type: none;
+  cursor: pointer;
+  background: transparent;
+}
+
+.nav__insideList a{
+  padding: 0;
+  height: 100%;
+  line-height: 100px;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  transition: .4s;
+}
+
+.nav__insideList a:hover{
+  height: 115px;
+  transform: translateY(-15px);
+  transition: all .4s;
+}
+
+#nav__toggle{
+  position: absolute;
+  visibility: hidden;
+  z-index: -1111;
+}
+
+.nav__btn--open,
+.nav__btn--hide{
+  display: none;
+}
+
+.feedbackForm{
+  top: 180px;
+  width: 400px;
+}
