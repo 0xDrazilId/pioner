@@ -5,8 +5,8 @@
 font-family: 'Montserrat', sans-serif;
 font-family: 'Roboto', sans-serif;
 font-family: 'Open Sans', sans-serif;
-
 */
+
 *, *::after, *::before {
   margin: 0;
   padding: 0; 
@@ -17,9 +17,16 @@ body{
   scroll-behavior: smooth;
 }
 
-header{
+#home, 
+#team,
+#price,
+#parts,
+#contacts{
   height: 100vh;
   width: 100%;
+}
+
+header{
   background: url('../src/img/service.jpg') no-repeat center center fixed;
   background-size: cover;
   overflow: hidden;
@@ -221,14 +228,17 @@ nav{
 }
 
 #team{
+  position: relative;
   margin: 0;
-  width: 100%; 
   height: 100%; 
   background: url('../src/img/team-bg.jpg') no-repeat center center fixed;
   background-size: cover;
 }
 
-.team__header{
+.team__header,
+.price__header,
+.parts__header,
+.contacts__header{
   position: relative;
   top: 50px;
   left: 50%;
@@ -242,6 +252,32 @@ nav{
   color: #fff;
   background: #e74c3c;
   text-transform: uppercase;
+}
+
+.contacts__header{
+  top: 15px;
+}
+
+.cogs:nth-child(1){
+  height: 50vh;
+  width: auto;
+  position: absolute;
+  left: -70px;
+  top: 50px;
+  z-index: 0;
+  opacity: .5;
+  animation: rotatecogs 8s linear infinite;
+}
+
+.cogs:nth-child(2){
+  height: 50vh;
+  width: auto;
+  position: absolute;
+  right: -70px;
+  bottom: 50px;
+  opacity: .5;
+  z-index: 0;
+  animation: rotatecogs-reverse 8s linear infinite;
 }
 
 .persons{
@@ -261,6 +297,7 @@ nav{
   background: url("../src/img/persons/pipe_1.png") no-repeat;
   margin: 30px 15px;
   transition: all .7s ease-out;
+  cursor: pointer;
 }
 
 .person:nth-child(1){
@@ -317,6 +354,83 @@ nav{
   font-style: italic;
 }
 
+#price{
+  width: 100%;
+  height: 100vh;
+  background-color: #141414;
+}
+
+#contacts{
+  position: relative;
+  background: #188fff;
+}
+
+.contacts__grid{
+  margin: 35px auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 20px;
+}
+
+.contacts__grid--icon{
+  width: calc(20% - 15px);
+  text-align: right;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  height: 35px;
+  font-size: 28px;
+  vertical-align: center;
+  color: #fff;
+}
+
+.contacts__grid--text{
+  vertical-align: center;
+  width: 80%;
+  text-align: left;
+  min-height: 35px;
+  margin-bottom: 10px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.contacts__grid--text a{
+  color: rgb(15, 0, 153);
+  font-family: "Open Sans", sans-serif;
+}
+
+.contacts__grid--text sup{
+  color: #4d4d4d;
+  text-decoration: underline;
+}
+
+#contacts iframe{
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 35%;
+}
+
+footer{
+  position: relative;
+  bottom: 0px;
+  height: 50px;
+  width: 100%;
+  background-color: rgb(37, 37, 37);
+  color: #fff;
+  padding: 5px;
+}
+
+.footer__homeLink{
+  color: azure;
+  font-size: 24px;
+  margin-left: 14px;
+  line-height: 45px;
+  text-decoration: none;
+}
+
 @keyframes animate{
   0%{
     background-position: 0;
@@ -332,5 +446,23 @@ nav{
   }
   100%{
     background-position: 0;
+  }
+}
+
+@keyframes rotatecogs{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotatecogs-reverse{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(-360deg);
   }
 }
