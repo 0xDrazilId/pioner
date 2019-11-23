@@ -19,7 +19,6 @@ body{
 
 #home, 
 #team,
-#price,
 #parts,
 #contacts{
   height: 100vh;
@@ -233,6 +232,7 @@ nav{
   height: 100%; 
   background: url('../src/img/team-bg.jpg') no-repeat center center fixed;
   background-size: cover;
+  overflow: hidden;
 }
 
 .team__header,
@@ -240,7 +240,7 @@ nav{
 .parts__header,
 .contacts__header{
   position: relative;
-  top: 50px;
+  top: 15px;
   left: 50%;
   transform: translateX(-50%);
   width: 300px;
@@ -252,10 +252,6 @@ nav{
   color: #fff;
   background: #e74c3c;
   text-transform: uppercase;
-}
-
-.contacts__header{
-  top: 15px;
 }
 
 .cogs:nth-child(1){
@@ -286,7 +282,7 @@ nav{
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
-  top: 45px;
+  top: 25px;
 }
 
 .person{
@@ -356,8 +352,119 @@ nav{
 
 #price{
   width: 100%;
-  height: 100vh;
-  background-color: #141414;
+  min-height: 100vh;
+  height: auto;
+  background:url('../src/img/price-bg.png') no-repeat center center fixed;
+  background-size: cover;
+  padding-bottom: 20px;
+}
+
+.wrapper{
+  width: 95%;
+  height: auto;
+  margin: 5px auto;
+  position: relative;
+  top: 15px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.tabs{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center; 
+  padding: 4px;
+}
+
+.tab{
+  box-sizing: content-box;
+  height: 50px;
+  width: 80px;
+  margin: 4px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: .5s;
+}
+
+.wrapper .active {
+  box-shadow: 0 0 10px #18ff5d;
+}
+
+.tab:hover{
+  box-shadow: 0 0 10px #18ff5d;
+  transition: .5s;
+}
+
+#tab__exhaust{
+  background: url('../src/img/work/exhaust.png') no-repeat;
+  background-size: contain;
+}
+
+#tab__engine{
+  background: url('../src/img/work/engine.png') no-repeat;
+  background-size: contain;
+}
+
+#tab__diagnosctics{
+  background: url('../src/img/work/diagnostics.png') no-repeat;
+  background-size: contain;
+}
+
+#tab__oil{
+  background: url('../src/img/work/oil.png') no-repeat;
+  background-size: contain;
+}
+
+#tab__gear{
+  background: url('../src/img/work/gear.png') no-repeat;
+  background-size: contain;
+}
+
+#tab__carriage{
+  background: url('../src/img/work/carriage.png') no-repeat;
+  background-size: contain;
+}
+
+#tab__cooling{
+  background: url('../src/img/work/cooling.png') no-repeat;
+  background-size: contain;
+}
+
+#tab__fuel{
+  background: url('../src/img/work/fuel.png') no-repeat;
+  background-size: contain;
+}
+
+.tab_item{
+  height: 100%;
+  width: 100%;
+}
+
+table{
+  background-color: rgba(247, 159, 31, .7);
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  border-collapse: collapse; /*убираем пустые промежутки между ячейками*/
+  border: 1px solid grey;
+}
+
+td{
+  padding: 2px;
+  border: 1px solid #888888;
+}
+
+.tr__first{
+  background-color: rgb(59, 156, 246);
+  color: azure;
+}
+
+.tr__second{
+  background-color: rgb(174, 216, 255);
+  color: #141414;
+  text-align: center;
 }
 
 #contacts{

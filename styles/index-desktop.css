@@ -57,3 +57,41 @@ nav{
   top: 180px;
   width: 400px;
 }
+
+.wrapper{
+  width: 95%;
+  height: auto;
+  margin: 5px auto;
+  position: relative;
+  top: 15px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+table{
+  width: 75%;
+  margin: 0 auto;
+}
+
+.tr__first,
+.tr__second{
+  font-size: 22px;
+}
+
+.tab{
+  height: 100px;
+  width: 160px;
+  margin-bottom: 4px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.wrapper .active {
+  box-shadow: 0 0 20px #14d14d;
+}
+
+.tab:hover{
+  box-shadow: 0 0 20px #14d14d;
+  transition: .5s;
+}
