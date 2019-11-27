@@ -88,10 +88,14 @@ table{
 }
 
 .wrapper .active {
-  box-shadow: 0 0 20px #14d14d;
+  box-shadow: 5px 5px 5px #3B9CF6;
 }
 
 .tab:hover{
-  box-shadow: 0 0 20px #14d14d;
+  box-shadow: 5px 5px 5px #3B9CF6;
   transition: .5s;
+}
+
+.parts__form{
+  width: 50%;
 }

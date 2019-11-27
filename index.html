@@ -7,10 +7,6 @@
     <title>Автосервис "Пионер" | Самара, ул. Партизанская, 44</title>
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" media = "(min-width:845px)" href="styles/index-desktop.css">
-    <script src="https://kit.fontawesome.com/f19ecbf2ec.js" crossorigin="anonymous"></script>
-    <script src="libs/jquery-3.4.1.min.js"></script>
-    <script src="libs/jquery.maskedinput.js"></script>
-    <script src="libs/common.js"></script>
 </head>
 
 <body>
@@ -702,8 +698,15 @@
     <div id="parts">
         <h1 class="parts__header">Заказать запчасть</h1>
             <form action="index.html" class="parts__form">
-        </h1>
-        </form>
+                <h3 class="parts__form--h3">Заполните поля</h3>
+                
+                    <input type="text" placeholder="VIN" class="parts__form--vin" required>                               
+                    <input type="text" placeholder="Наименование детали" class="parts__form--detail">                                
+                    <input type="text" placeholder="Номер телефона" class="parts__form--phone" required>                                
+                    <input type="text" placeholder="Ваше имя" class="parts__form--name">                           
+                    <input type="submit" class="parts__form--submit" value="ОТПРАВИТЬ!">
+                
+            </form>
     </div>
 
     <div id="contacts">
@@ -751,5 +754,12 @@
         <a href="#home" class="footer__homeLink"><i class="fas fa-arrow-up"></i>&nbsp;Наверх</a>
     </footer>
 
+
+    <script src="https://kit.fontawesome.com/f19ecbf2ec.js" crossorigin="anonymous"></script>
+    <script src="libs/jquery-3.4.1.min.js"></script>
+    <script src="libs/jquery.maskedinput.js"></script>
+    <script src="libs/common.js"></script>
+
 </body>
+<!-- Created by Ferafontov G.A. → https://github.com/0xDrazilId -->
 </html>
