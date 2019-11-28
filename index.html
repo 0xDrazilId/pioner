@@ -699,10 +699,10 @@
         <h1 class="parts__header">Заказать запчасть</h1>
             <form action="index.html" class="parts__form">
                 <h3 class="parts__form--h3">Заполните поля</h3>
-                
-                    <input type="text" placeholder="VIN" class="parts__form--vin" required>                               
+                <p class="parts__form--p">Наш менеджер свяжится с вами, уточнит заказ, проверит совместимость с авто и оформит соответствующую деталь</p>
+                    <input type="text" placeholder="VIN*" class="parts__form--vin" required>                               
                     <input type="text" placeholder="Наименование детали" class="parts__form--detail">                                
-                    <input type="text" placeholder="Номер телефона" class="parts__form--phone" required>                                
+                    <input type="text" placeholder="Номер телефона*" class="parts__form--phone" required>                                
                     <input type="text" placeholder="Ваше имя" class="parts__form--name">                           
                     <input type="submit" class="parts__form--submit" value="ОТПРАВИТЬ!">
                 
@@ -712,42 +712,47 @@
     <div id="contacts">
             <h1 class="contacts__header">Наши контакты</h1>
             <div class="contacts__grid">
+                <span class="contacts__wrapper">
                     <span class="contacts__grid--icon">
                         <i class="fas fa-mobile-alt"></i>
                     </span>
                     <span class="contacts__grid--text">
-                        <a href="tel:+7 (846) 205-20-30">+7 (846) 205-20-30</a>
+                        <a href="tel:+7 (846) 205-20-30">+7 (846) 205-20-30<br></a>
                     </span>
 
-                    <div class="contacts__grid--icon">
+                    <span class="contacts__grid--icon">
                         <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <div class="contacts__grid--text">
-                        <a href="tel:+7 (987) 955-20-30">+7 (987) 955-20-30</a>
-                    </div>
+                    </span>
+                    <span class="contacts__grid--text">
+                        <a href="tel:+7 (987) 955-20-30">+7 (987) 955-20-30<br></a>
+                    </span>
 
-                    <div class="contacts__grid--icon">
+                    <span class="contacts__grid--icon">
                         <i class="far fa-envelope"></i>
-                    </div>
-                    <div class="contacts__grid--text">
-                        <a href="mailto:avtoservis-pioner.ru@yandex.ru">avtoservis-pioner.ru@yandex.ru</a>
-                    </div>
+                    </span>
+                    <span class="contacts__grid--text">
+                        <a href="mailto:avtoservis-pioner.ru@yandex.ru">avtoservis-pioner.ru@yandex.ru<br></a>
+                    </span>
 
-                    <div class="contacts__grid--icon">
+                    <span class="contacts__grid--icon">
                         <i class="far fa-clock"></i>
-                    </div>
-                    <div class="contacts__grid--text">
-                        10<sup>00</sup>&nbsp;-&nbsp;19<sup>00</sup>
-                    </div>
+                    </span>
+                    <span class="contacts__grid--text">
+                        Пн-Пт с 10<sup>00</sup>&nbsp;-&nbsp;19<sup>00</sup><br>
+                    </span>
 
-                    <div class="contacts__grid--icon">
+                    <span class="contacts__grid--icon">
                         <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <div class="contacts__grid--text">
-                        Адрес: г. Самара ул.Партизанская д.44
-                    </div>
-                </div>
-                <iframe src="https://yandex.ru/map-widget/v1/-/CGXZRW-O" width="560" height="400" frameborder="1" allowfullscreen="true"></iframe>
+                    </span>
+                    <span class="contacts__grid--text">
+                        <a href="https://yandex.ru/maps/-/CGde6VZz">г. Самара ул.Партизанская д.44</a>
+                    </span>
+                </span>
+                <span class="contacts__wrapper">
+                    <img src="src/img/photo.jpg" alt="" class="contacts__img">
+                </span>                
+            </div>
+            <iframe src="https://yandex.ru/map-widget/v1/-/CGXZRW-O" width="560" height="400" frameborder="1" allowfullscreen="true"></iframe>
     </div>
 
     <footer>
