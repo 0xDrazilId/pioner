@@ -1,3 +1,7 @@
+*{
+  scroll-behavior: smooth; 
+} 
+
 nav{
   height: 100px;
 }
@@ -96,6 +100,42 @@ table{
   transition: .5s;
 }
 
+#price{
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  background:url('../src/img/price-bg.png') no-repeat center center fixed;
+  background-size: cover;
+  padding-bottom: 20px;
+}
+
 .parts__form{
   width: 50%;
+}
+
+#contacts{
+  height: 100vh;
+}
+
+.contacts__grid{
+  position: relative;
+  top: 65px;
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+  color: #1660a5;
+  font-size: 22px;
+  height: 300px;
+}
+
+.contacts__table--wrapper{
+  height: 300px;
+}
+
+.contacts__img{
+  width: 30% !important;
+  cursor: pointer;
 }

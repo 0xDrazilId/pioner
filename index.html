@@ -712,51 +712,72 @@
     <div id="contacts">
             <h1 class="contacts__header">Наши контакты</h1>
             <div class="contacts__grid">
-                <span class="contacts__wrapper">
-                    <span class="contacts__grid--icon">
-                        <i class="fas fa-mobile-alt"></i>
-                    </span>
-                    <span class="contacts__grid--text">
-                        <a href="tel:+7 (846) 205-20-30">+7 (846) 205-20-30<br></a>
-                    </span>
-
-                    <span class="contacts__grid--icon">
-                        <i class="fas fa-mobile-alt"></i>
-                    </span>
-                    <span class="contacts__grid--text">
-                        <a href="tel:+7 (987) 955-20-30">+7 (987) 955-20-30<br></a>
-                    </span>
-
-                    <span class="contacts__grid--icon">
-                        <i class="far fa-envelope"></i>
-                    </span>
-                    <span class="contacts__grid--text">
-                        <a href="mailto:avtoservis-pioner.ru@yandex.ru">avtoservis-pioner.ru@yandex.ru<br></a>
-                    </span>
-
-                    <span class="contacts__grid--icon">
-                        <i class="far fa-clock"></i>
-                    </span>
-                    <span class="contacts__grid--text">
-                        Пн-Пт с 10<sup>00</sup>&nbsp;-&nbsp;19<sup>00</sup><br>
-                    </span>
-
-                    <span class="contacts__grid--icon">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </span>
-                    <span class="contacts__grid--text">
-                        <a href="https://yandex.ru/maps/-/CGde6VZz">г. Самара ул.Партизанская д.44</a>
-                    </span>
-                </span>
-                <span class="contacts__wrapper">
-                    <img src="src/img/photo.jpg" alt="" class="contacts__img">
-                </span>                
-            </div>
-            <iframe src="https://yandex.ru/map-widget/v1/-/CGXZRW-O" width="560" height="400" frameborder="1" allowfullscreen="true"></iframe>
+                <div class="contacts__table--wrapper">
+                    <table class="contacts__table contacts__flex">
+                    <tr>
+                        <td class="contacts__grid--icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </td>
+                        <td class="contacts__grid--text">
+                            <a href="tel:+7 (846) 205-20-30">+7 (846) 205-20-30<br></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="contacts__grid--icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </td>
+                        <td class="contacts__grid--text">
+                            <a href="tel:+7 (987) 955-20-30">+7 (987) 955-20-30<br></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="contacts__grid--icon">
+                            <i class="far fa-envelope"></i>
+                        </td>
+                        <td class="contacts__grid--text">
+                            <a href="mailto:avtoservis-pioner.ru@yandex.ru">avtoservis-pioner.ru@yandex.ru<br></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="contacts__grid--icon">
+                            <i class="far fa-clock"></i>
+                        </td>
+                        <td class="contacts__grid--text">
+                            Пн-Пт с 10<sup>00</sup>&nbsp;-&nbsp;19<sup>00</sup><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="contacts__grid--icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </td>
+                        <td class="contacts__grid--text">
+                            <a href="https://yandex.ru/maps/-/CGde6VZz">г. Самара ул.Партизанская д.44</a>
+                        </td>
+                    </tr>
+                    </table>
+                </div>
+                <img src="src/img/photo.jpg" alt="" class="contacts__img contacts__flex">              
+                <iframe src="https://yandex.ru/map-widget/v1/-/CGXZRW-O" width="560" height="400" frameborder="1" allowfullscreen="true" class="contacts__flex"></iframe>
+            </div>            
     </div>
 
     <footer>
         <a href="#home" class="footer__homeLink"><i class="fas fa-arrow-up"></i>&nbsp;Наверх</a>
+        <p align="center">Все права защищены &copy; Автосервис "Пионер" 2019 г.</p>
+        <div class="socials">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-vk"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+        </div>
+        <div class="footer__menu">
+                <a href="#home">Главная&nbsp;&nbsp;<i class="fas fa-home"></i></a>
+                <a href="#price">Прайс&nbsp;&nbsp;&nbsp;<i class="fas fa-clipboard-list"></i>&nbsp;</a>
+                <a href="#team">Команда&nbsp;&nbsp;<i class="fas fa-user-friends"></i></a>
+                <a href="#parts">Запчасти&nbsp;&nbsp;<i class="fas fa-cogs"></i></a>
+                <a href="#contacts">Контакты&nbsp;&nbsp;<i class="far fa-id-card"></i></a>
+        </div>
+
     </footer>
 
 
