@@ -1,0 +1,29 @@
+.contacts__grid{
+    position: relative;
+    width: 90%;
+    top: 65px;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    color: #1660a5;
+    font-size: 22px;
+    height: 300px;
+  }
+  
+  .contacts__table--wrapper{
+    height: 400px;
+  }
+  
+  .contacts__img{
+    width: 45% !important;
+    height: 400px;
+    cursor: pointer;
+  }
+  
+  #contacts iframe{
+    width: 300px;
+    height: 400px;
+  }

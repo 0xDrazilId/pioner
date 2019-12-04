@@ -92,11 +92,11 @@ table{
 }
 
 .wrapper .active {
-  box-shadow: 5px 5px 5px #3B9CF6;
+  box-shadow: 0px 0px 5px #3B9CF6;
 }
 
 .tab:hover{
-  box-shadow: 5px 5px 5px #3B9CF6;
+  box-shadow: 0px 0px 5px #3B9CF6;
   transition: .5s;
 }
 
@@ -104,7 +104,7 @@ table{
   width: 100%;
   min-height: 100vh;
   height: auto;
-  background:url('../src/img/price-bg.png') no-repeat center center fixed;
+  background: linear-gradient(to top, #565656, #141414);
   background-size: cover;
   padding-bottom: 20px;
 }
@@ -119,8 +119,8 @@ table{
 
 .contacts__grid{
   position: relative;
-  top: 65px;
-  margin-bottom: 20px;
+  width: 90%;
+  top: 0px;
   width: 100%;
   display: flex;
   flex-flow: row wrap;
@@ -128,14 +128,27 @@ table{
   align-items: flex-start;
   color: #1660a5;
   font-size: 22px;
-  height: 300px;
+  height: 250px;
 }
 
 .contacts__table--wrapper{
-  height: 300px;
+  height: 250px;
 }
 
 .contacts__img{
-  width: 30% !important;
+  width: 45% !important;
+  height: 250px;
   cursor: pointer;
+}
+
+#contacts iframe{
+  width: 700px;
+  height: 230px;
+}
+
+.team__header,
+.price__header,
+.parts__header,
+.contacts__header{
+  font-size: 56px;
 }
