@@ -13,7 +13,15 @@
 <body>
 
     <header id="home">   
-        <div class="logo"></div>        
+        <div class="logo"></div>
+        <div id="next_btn"></div>
+        <div id="prev_btn"></div>
+        <div id="slider">
+            <div id="slide_01" class="slide current"></div>
+            <div id="slide_02" class="slide"></div>
+            <div id="slide_03" class="slide"></div>
+            <div id="slide_04" class="slide"></div>
+        </div>
         <nav>
             <input type="checkbox" id="nav__toggle">
             <label for="nav__toggle" class="nav__btn--open"><i class="fas fa-bars"></i></label>
@@ -752,7 +760,7 @@
                             <i class="fas fa-map-marker-alt"></i>
                         </td>
                         <td class="contacts__grid--text">
-                            <a href="https://yandex.ru/maps/-/CGde6VZz">г. Самара ул.Партизанская д.44</a>
+                            <a href="https://yandex.ru/maps/-/CGde6VZz" target="_blank">г. Самара ул.Партизанская д.44</a>
                         </td>
                     </tr>
                     </table>
@@ -783,6 +791,7 @@
 
 
     <script src="https://kit.fontawesome.com/f19ecbf2ec.js" crossorigin="anonymous"></script>
+    <script src="libs/slider.js"></script>
     <script src="libs/jquery-3.4.1.min.js"></script>
     <script src="libs/jquery.maskedinput.js"></script>
     <script src="libs/common.js"></script>

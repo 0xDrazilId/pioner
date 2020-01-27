@@ -24,6 +24,10 @@ font-family: 'Open Sans', sans-serif;
   width: 100%;
 }
 
+#team{
+  display: none;
+}
+
 header{
   background: url('../src/img/service.jpg') no-repeat center center fixed;
   background-size: cover;
@@ -117,7 +121,7 @@ nav{
 }
 
 .feedbackForm{
-  background-color: rgba(14, 14, 14, 0.6);
+  background-color: rgba(14, 14, 14, 0.9);
   position: absolute;
   top: 22vh;
   right: 15vw;
