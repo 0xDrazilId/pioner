@@ -5,107 +5,22 @@
 #header{
   background: none;
 }
-
+/* 
 nav{
   height: 80px;
   z-index: 3;
-}
+} */
 
-.nav__insideList a{
+/* .nav__insideList a{
   line-height: 80px;
-}
+} */
 
 .logo{
   height: 122px;
   z-index: 4;
 }
 
-/*SLIDER NEXT*/
-
-#prev_btn, #next_btn{
-  width: 64px;
-  height: 64px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 999;
-  cursor: pointer;
-}
-
-#prev_btn:hover, #next_btn:hover{
-  filter: brightness(.5);
-}
-
-#prev_btn{
-  background: url('../src/img/slider/arrow-prev.png');
-  left: 10px;
-}
-
-#next_btn{
-  right: 10px;
-  background: url('../src/img/slider/arrow-next.png');
-}
-
-#slider {
-  position: relative;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-}
- 
-.slide {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  z-index: 1;
-
-
-  -webkit-transition: opacity 1s;
-  -moz-transition: opacity 1s;
-  -o-transition: opacity 1s;
-  transition: opacity 1s;
-}
-
-#slide_01{
-  background: url("../src/img/slider/01.png") no-repeat;
-  background-size: cover;
-}
-
-#slide_02{
-  background: url("../src/img/slider/02.png") no-repeat;
-  background-size: cover;
-}
-
-#slide_03{
-  background: url("../src/img/slider/03.png") no-repeat;
-  background-size: cover;
-}
-
-#slide_04{
-  background: url("../src/img/slider/04.png") no-repeat;
-  background-size: cover;
-}
-
-.slide img{
-  width: 100%;
-  max-width: 100%;
-  height: 100%;
-  max-height: 100%;
-}
- 
-.current {
-  opacity: 1;
-  z-index: 2;
-}
-
-
-/* END OF SLIDER */
-
-.nav__insideList{
+/* .nav__insideList{
   padding: 0;
   border: 0;
   box-sizing: border-box;
@@ -123,9 +38,9 @@ nav{
   list-style-type: none;
   cursor: pointer;
   background: transparent;
-}
+} */
 
-.nav__insideList a{
+/* .nav__insideList a{
   padding: 0;
   height: 100%;
   display: block;
@@ -144,12 +59,12 @@ nav{
   position: absolute;
   visibility: hidden;
   z-index: -1111;
-}
-
+} */
+/* 
 .nav__btn--open,
 .nav__btn--hide{
   display: none;
-}
+} */
 
 .feedbackForm{
   top: 180px;

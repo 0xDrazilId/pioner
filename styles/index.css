@@ -18,14 +18,10 @@ font-family: 'Open Sans', sans-serif;
 }
 
 #home, 
-#team,
+#disc,
 #parts{
   height: 100vh;
   width: 100%;
-}
-
-#team{
-  display: none;
 }
 
 header{
@@ -64,23 +60,23 @@ nav{
   flex-flow: column nowrap;
   align-content: center;
   position: fixed;
-  top: 0;
-  right:-100%;
-  width: 65vw;
-  height: 100%;
+  top:-180%;
+  width: 100%;
+  height: 65%;
   transition: .7s;
-  background: url('../src/img/menu.jpg') no-repeat;
+  opacity: .9;
+  background-color: black;
   background-size: cover;
   font-size: 24px;
   font-family: 'Open Sans', sans-serif;
   list-style-type: none;
   cursor: pointer;
-  z-index: 3;
+  z-index: 9;
 }
 
 .nav__insideList a{
   height: calc((100% - 85px) / 5);
-  padding-left: 10vw;
+  margin: auto;
   line-height: 100px;
   display: block;
   color: #fff;
@@ -109,14 +105,14 @@ nav{
 }
 
 .nav__btn--hide{
-  font-size: 36px;
-  color: #fff ;
-  right: 30px;
-  top: 25px;
+  font-size: 50px;
+  color: azure ;
+  right: 45px;
+  top: 12px;
 }
 
 #nav__toggle:checked ~ .nav__insideList{
-  right: 0;
+  top: 0;
   transition: .7s;
 }
 
@@ -227,16 +223,16 @@ nav{
   opacity: .5;
 }
 
-#team{
+#disc{
   position: relative;
   margin: 0;
-  height: 100%; 
-  background: url('../src/img/team-bg.jpg') no-repeat center center fixed;
+  height: 100vh; 
+  background: url('../src/img/disc-bg.jpg') no-repeat center center fixed;
   background-size: cover;
   overflow: hidden;
 }
 
-.team__header,
+.disc__header,
 .price__header,
 .parts__header,
 .contacts__header{
@@ -252,6 +248,96 @@ nav{
   text-transform: capitalize;
   text-shadow: 1px 1px 2px rgba(14,14,14,.7);
 }
+
+.disc__header{
+  position: absolute;
+  z-index: 3;
+}
+
+/*SLIDER NEXT*/
+
+
+#prev_btn, #next_btn{
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 999;
+  cursor: pointer;
+}
+
+#prev_btn:hover, #next_btn:hover{
+  filter: brightness(.5);
+}
+
+#prev_btn{
+  background: url('../src/img/slider/arrow-prev.png');
+  left: 10px;
+}
+
+#next_btn{
+  right: 10px;
+  background: url('../src/img/slider/arrow-next.png');
+}
+
+#slider {
+  position: relative;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+ 
+.slide {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+
+
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+#slide_01{
+  background: url("../src/img/slider/01.png") no-repeat;
+  background-size: cover;
+}
+
+#slide_02{
+  background: url("../src/img/slider/02.png") no-repeat;
+  background-size: cover;
+}
+
+#slide_03{
+  background: url("../src/img/slider/03.png") no-repeat;
+  background-size: cover;
+}
+
+#slide_04{
+  background: url("../src/img/slider/04.png") no-repeat;
+  background-size: cover;
+}
+
+.slide img{
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+}
+ 
+.current {
+  opacity: 1;
+  z-index: 2;
+}
+
+/*THE END OF THE SLIDER*/
 
 .cogs:nth-child(1){
   height: 50vh;
@@ -273,79 +359,6 @@ nav{
   opacity: .5;
   z-index: 0;
   animation: rotatecogs-reverse 8s linear infinite;
-}
-
-.persons{
-  position: relative;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-items: center;
-  top: 25px;
-}
-
-.person{
-  position: relative;
-  box-shadow: 0 0 15px black;
-  width: 250px;
-  height: 350px;
-  background: url("../src/img/persons/pipe_1.png") no-repeat;
-  margin: 30px 15px;
-  transition: all .7s ease-out;
-  cursor: pointer;
-}
-
-.person:nth-child(1){
-  background: url("../src/img/persons/pipe_1.png") no-repeat;
-}
-
-.person:nth-child(2){
-  background: url("../src/img/persons/pipe_2.png") no-repeat;
-}
-
-.person:nth-child(3){
-  background: url("../src/img/persons/pipe_3.png") no-repeat;
-}
-
-.person:nth-child(4){
-  background: url("../src/img/persons/pipe_4.png") no-repeat;
-}
-.person:nth-child(5){
-  background: url("../src/img/persons/pipe_5.png") no-repeat;
-}
-
-.person:nth-child(6){
-  background: url("../src/img/persons/pipe_6.png") no-repeat;
-}
-
-.person:nth-child(7){
-  background: url("../src/img/persons/pipe_7.png") no-repeat;
-}
-
-.person__header{
-  position: absolute;
-  text-transform: capitalize;
-  top: 55%;
-  font-size: 24px;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  
-  font-family: "Open Sans", sans-serif;
-  color: #fff;
-  background: #e74c3c;
-}
-
-.person__description{
-  position: absolute;
-  top: 80%;
-  width: 100%;
-  font-size: 22px;
-  text-align: center;
-  font-family: "Open Sans", sans-serif;
-  color: #000;
-  font-weight: normal;
-  font-style: italic;
 }
 
 #price{
