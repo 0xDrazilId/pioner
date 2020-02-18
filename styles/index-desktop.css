@@ -5,66 +5,56 @@
 #header{
   background: none;
 }
-/* 
+ 
 nav{
   height: 80px;
-  z-index: 3;
-} */
-
-/* .nav__insideList a{
-  line-height: 80px;
-} */
+  z-index: 5;
+}
 
 .logo{
   height: 122px;
-  z-index: 4;
+  width: 250px;
+  z-index: 5;
 }
 
-/* .nav__insideList{
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
+.headContacts{
   position: absolute;
   top: 0;
-  right: 0;
-  float: right;
-  width: calc(100% - 320px);
-  height: 100px;
-  line-height: 100px;
+  right: 80px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
-  font-size: 18px;
-  list-style-type: none;
-  cursor: pointer;
-  background: transparent;
-} */
+  align-items: center;
+  width: 50%;
+  height: 80px;
+  z-index: 5;
+}
 
-/* .nav__insideList a{
-  padding: 0;
-  height: 100%;
-  display: block;
-  color: #fff;
+.headContacts__regym,
+.headContacts__adress,
+.headContacts__phone{
+  color: azure;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.headContacts__adress > a{
   text-decoration: none;
-  transition: .4s;
+  color: azure;
+  border-bottom: 2px dashed azure;
 }
 
-.nav__insideList a:hover{
-  height: 115px;
-  transform: translateY(-15px);
-  transition: all .4s;
+.headContacts__phone > a{
+  color: azure;
+  text-decoration: none;
+  border-bottom: 2px dashed azure;
+  line-height: 28px;
 }
 
-#nav__toggle{
-  position: absolute;
-  visibility: hidden;
-  z-index: -1111;
-} */
-/* 
-.nav__btn--open,
-.nav__btn--hide{
-  display: none;
-} */
+.nav__btn--open{
+  font-size: 50px;
+}
 
 .feedbackForm{
   top: 180px;

@@ -12,10 +12,15 @@
 
 <body>
 
-    <header id="home">   
-        <div class="logo"></div>
+    <header id="home">           
         <nav>
+            <div class="logo"></div>
             <input type="checkbox" id="nav__toggle">
+            <div class="headContacts">
+                <div class="headContacts__regym"><i class="far fa-clock"></i>&nbsp; Пн-Пт с 10<sup>00</sup> - 19<sup>00</sup></div>
+                <div class="headContacts__adress"><a href="https://yandex.ru/maps/-/CKQcqT1c" target="_blank"><i class="fas fa-map-marked-alt"></i>&nbsp; г. Самара ул.Партизанская д.44</a></div>
+                <div class="headContacts__phone"><a href="tel:+7 (846) 205-20-30"><i class="fas fa-phone-alt"></i>&nbsp; +7 (846) 205-20-30</a><br><a href="tel:+7 (846) 205-20-30"><i class="fas fa-phone-alt"></i>&nbsp; +7 (987) 955-20-30</a></div>
+            </div>
             <label for="nav__toggle" class="nav__btn--open"><i class="fas fa-bars"></i></label>
             <ul class="nav__insideList">
                 <a href="#home"><i class="fas fa-home"></i>&nbsp;&nbsp;Главная</a>               
@@ -26,6 +31,7 @@
                 <label for="nav__toggle" class="nav__btn--hide"><i class="fas fa-times"></i></label>
             </ul>
         </nav>  
+        
         <form class="feedbackForm" action="index.html">
             <h1 class="feedbackForm__h1">
                 Автосервис "ПИОНЕР"
@@ -38,6 +44,20 @@
             <div class="wave"></div>                                    
         </form>       
     </header>
+
+    <div id="disc">
+        <!-- <img src="src/img/cog.png" alt="починить машину в самаре" class="cogs">
+        <img src="src/img/cog.png" alt="отремонтировать автомобиль в самаре" class="cogs"> -->        
+        <div id="prev_btn"></div>
+        <div id="next_btn"></div>
+        <h1 class="disc__header">Акции</h1>
+        <div id="slider">
+            <div id="slide_01" class="slide current"></div>
+            <div id="slide_02" class="slide"></div>
+            <div id="slide_03" class="slide"></div>
+            <div id="slide_04" class="slide"></div>
+        </div>
+    </div>
 
     <div id="price">
         <h1 class="price__header">
@@ -658,20 +678,6 @@
         </div>
     </div>
 
-    <div id="disc">
-        <!-- <img src="src/img/cog.png" alt="починить машину в самаре" class="cogs">
-        <img src="src/img/cog.png" alt="отремонтировать автомобиль в самаре" class="cogs"> -->        
-        <div id="prev_btn"></div>
-        <div id="next_btn"></div>
-        <h1 class="disc__header">Акции</h1>
-        <div id="slider">
-            <div id="slide_01" class="slide current"></div>
-            <div id="slide_02" class="slide"></div>
-            <div id="slide_03" class="slide"></div>
-            <div id="slide_04" class="slide"></div>
-        </div>
-    </div>
-
     <div id="parts">
         <h1 class="parts__header">Заказать запчасть</h1>
             <form action="index.html" class="parts__form">
@@ -740,19 +746,20 @@
 
     <footer>
         <a href="#home" class="footer__homeLink"><i class="fas fa-arrow-up"></i>&nbsp;Наверх</a>
-        <p align="center">Все права защищены &copy; Автосервис "Пионер" 2019 г.</p>
-        <div class="socials">
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-vk"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-twitter"></i>
-        </div>
+        <img src="/src/img/logo_footer.png" width="200px" style="border-radius: 10px;">
         <div class="footer__menu">
                 <a href="#home">Главная&nbsp;&nbsp;<i class="fas fa-home"></i></a>
                 <a href="#price">Прайс&nbsp;&nbsp;&nbsp;<i class="fas fa-clipboard-list"></i>&nbsp;</a>
                 <a href="#team">Команда&nbsp;&nbsp;<i class="fas fa-user-friends"></i></a>
                 <a href="#parts">Запчасти&nbsp;&nbsp;<i class="fas fa-cogs"></i></a>
                 <a href="#contacts">Контакты&nbsp;&nbsp;<i class="far fa-id-card"></i></a>
+        </div>
+        <p align="center">Автосервис "Пионер" 2019-2020 г.</p>
+        <div class="socials">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-vk"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
         </div>
 
     </footer>
