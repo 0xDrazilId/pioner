@@ -18,14 +18,16 @@ nav{
 }
 
 .headContacts{
+  color: azure;
   position: absolute;
   top: 0;
-  right: 80px;
+  left: 280px;
+  padding-right: 10%;
+  width: calc(100% - 250px);
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
   align-items: center;
-  width: 50%;
   height: 80px;
   z-index: 5;
 }
@@ -33,16 +35,16 @@ nav{
 .headContacts__regym,
 .headContacts__adress,
 .headContacts__phone{
-  color: azure;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
-  margin-right: 10px;
 }
 
 .headContacts__adress > a{
-  text-decoration: none;
   color: azure;
+  text-decoration: none;
   border-bottom: 2px dashed azure;
+  line-height: 28px;
+  margin-left: 18px;
 }
 
 .headContacts__phone > a{
@@ -50,6 +52,7 @@ nav{
   text-decoration: none;
   border-bottom: 2px dashed azure;
   line-height: 28px;
+  margin-left: 18px;
 }
 
 .nav__btn--open{
@@ -151,4 +154,8 @@ table{
 .parts__header,
 .contacts__header{
   font-size: 56px;
+}
+
+footer > p{
+  font-size: 20px;
 }
