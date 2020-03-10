@@ -7,13 +7,13 @@
 }
  
 nav{
-  height: 80px;
+  height: 65px;
   z-index: 5;
 }
 
 .logo{
-  height: 122px;
-  width: 250px;
+  height: 65px;
+  width: 180px;
   z-index: 5;
 }
 
@@ -21,15 +21,14 @@ nav{
   color: azure;
   position: absolute;
   top: 0;
-  left: 280px;
-  padding-right: 10%;
-  width: calc(100% - 250px);
+  left: 150px;
+  width: calc(100% - 350px);
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
   align-items: center;
-  height: 80px;
-  z-index: 5;
+  height: 65px;
+  z-index: 4;
 }
 
 .headContacts__regym,
@@ -56,7 +55,7 @@ nav{
 }
 
 .nav__btn--open{
-  font-size: 50px;
+  font-size: 45px;
 }
 
 .feedbackForm{

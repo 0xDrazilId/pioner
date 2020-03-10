@@ -44,8 +44,7 @@ nav{
 .logo{
   display: block;
   position: fixed;
-  height: 65px;
-  width: 200px;
+  height: 50px;
   top: 0;
   left: 0;
   background: url('../src/img/Logo.png') no-repeat;
@@ -117,9 +116,12 @@ nav{
 
 .nav__btn--open{
   color: azure;
+  right: 14px;
+  top: 5px;
+}
+
+.nav__btn--open > i{
   font-size: 35px;
-  right: 15px;
-  top: 12px;
 }
 
 .nav__btn--hide{
@@ -245,7 +247,7 @@ nav{
   position: relative;
   margin: 0;
   height: 100vh; 
-  background: url("../src/img/disc-bg.jpg") no-repeat center center;
+  background: url("../src/img/disc-bg.jpg") no-repeat center center fixed;
   background-size: cover;
   overflow: hidden;
 }
