@@ -45,6 +45,7 @@ nav{
   display: block;
   position: fixed;
   height: 50px;
+  width: 150px;
   top: 0;
   left: 0;
   background: url('../src/img/Logo.png') no-repeat;
