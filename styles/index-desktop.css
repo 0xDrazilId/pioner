@@ -11,6 +11,53 @@ nav{
   z-index: 5;
 }
 
+.nav__insideList{
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  right: 0;
+  float: right;
+  width: calc(100% - 320px);
+  height: 65px;
+  line-height: 65px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  font-size: 18px;
+  list-style-type: none;
+  cursor: pointer;
+  background: transparent;
+}
+
+.nav__insideList a{
+  padding: 0;
+  height: 100%;
+  line-height: 65px;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  transition: .4s;
+}
+
+.nav__insideList a:hover{
+  height: 115px;
+  transform: translateY(-15px);
+  transition: all .4s;
+}
+
+#nav__toggle{
+  position: absolute;
+  visibility: hidden;
+  z-index: -1111;
+}
+
+.nav__btn--open,
+.nav__btn--hide{
+  display: none;
+}
+
 .logo{
   height: 65px;
   width: 180px;
@@ -115,26 +162,27 @@ table{
   width: 50%;
 }
 
-#contacts{
-  height: 100vh;
+#contacts{ 
+  height: auto;
+  /*min-height: 100vh;*/
 }
 
-.contacts__grid{
+/*.contacts__grid{
   position: relative;
   width: 90%;
   top: 0px;
-  width: 100%;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  flex-flow: column wrap;
   align-items: flex-start;
   color: #1660a5;
   font-size: 22px;
-  height: 250px;
 }
 
 .contacts__table--wrapper{
   height: 250px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-flow: row nowrap;
 }
 
 .contacts__img{
@@ -146,7 +194,7 @@ table{
 #contacts iframe{
   width: 700px;
   height: 230px;
-}
+}*/
 
 .team__header,
 .price__header,
